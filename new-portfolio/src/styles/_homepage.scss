@@ -17,7 +17,7 @@
         opacity: 0;
         animation-name: infoDropIn;
         animation-duration: 2s;
-        animation-delay: 1s;
+        animation-delay: 1.2s;
         animation-fill-mode: forwards;
     }
 
@@ -27,7 +27,7 @@
         opacity: 0;
         animation-name: infoDropIn;
         animation-duration: 2s;
-        animation-delay: 1.3s;
+        animation-delay: 1.4s;
         animation-fill-mode: forwards;
     }
 
@@ -40,7 +40,47 @@
         opacity: 0;
         animation-name: infoDropIn;
         animation-duration: 2s;
-        animation-delay: 1.5s;
+        animation-delay: 1.6s;
         animation-fill-mode: forwards;
+    }
+
+    .icons {
+        @include flexCenter(row); 
+        gap: 5vw;
+        font-size: 2em;
+
+        a {
+            color: $polishedPine;
+            transition: .2s;
+            opacity: .8;
+
+            &:hover {
+                opacity: 1;
+            }
+        }
+
+        #github-logo {
+            transform: translateX(-250px);
+            animation-name: slideInIcons; 
+            animation-duration: 1s;
+            animation-delay: 1.7s;
+            animation-fill-mode: forwards;
+        }
+
+        #linkedin-logo {
+            transform: translateX(-350px);
+            animation-name: slideInIcons; 
+            animation-duration: 1s;
+            animation-delay: 2.1s;
+            animation-fill-mode: forwards;
+        }
+
+        #twitter-logo {
+            transform: translateX(-350px);
+            animation-name: slideInIcons; 
+            animation-duration: 1s;
+            animation-delay: 2.6s;
+            animation-fill-mode: forwards;
+        }
     }
 }

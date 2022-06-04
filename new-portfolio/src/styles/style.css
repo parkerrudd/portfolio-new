@@ -49,6 +49,28 @@
   }
 }
 
+@-webkit-keyframes slideInIcons {
+  from {
+    -webkit-transform: translateX(-350px);
+            transform: translateX(-350px);
+  }
+  to {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+}
+
+@keyframes slideInIcons {
+  from {
+    -webkit-transform: translateX(-350px);
+            transform: translateX(-350px);
+  }
+  to {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+}
+
 .nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -132,8 +154,8 @@
 }
 
 #about {
-  -webkit-animation: navDropIn .9s;
-          animation: navDropIn .9s;
+  -webkit-animation: navDropIn 1s;
+          animation: navDropIn 1s;
 }
 
 #work {
@@ -163,6 +185,17 @@
   }
   100% {
     opacity: 1;
+  }
+}
+
+@keyframes slideInIcons {
+  from {
+    -webkit-transform: translateX(-350px);
+            transform: translateX(-350px);
+  }
+  to {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
   }
 }
 
@@ -197,8 +230,8 @@
           animation-name: infoDropIn;
   -webkit-animation-duration: 2s;
           animation-duration: 2s;
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
+  -webkit-animation-delay: 1.2s;
+          animation-delay: 1.2s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
 }
@@ -211,8 +244,8 @@
           animation-name: infoDropIn;
   -webkit-animation-duration: 2s;
           animation-duration: 2s;
-  -webkit-animation-delay: 1.3s;
-          animation-delay: 1.3s;
+  -webkit-animation-delay: 1.4s;
+          animation-delay: 1.4s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
 }
@@ -228,8 +261,76 @@
           animation-name: infoDropIn;
   -webkit-animation-duration: 2s;
           animation-duration: 2s;
-  -webkit-animation-delay: 1.5s;
-          animation-delay: 1.5s;
+  -webkit-animation-delay: 1.6s;
+          animation-delay: 1.6s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.home .icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 5vw;
+  font-size: 2em;
+}
+
+.home .icons a {
+  color: #70A288;
+  -webkit-transition: .2s;
+  transition: .2s;
+  opacity: .8;
+}
+
+.home .icons a:hover {
+  opacity: 1;
+}
+
+.home .icons #github-logo {
+  -webkit-transform: translateX(-250px);
+          transform: translateX(-250px);
+  -webkit-animation-name: slideInIcons;
+          animation-name: slideInIcons;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-delay: 1.7s;
+          animation-delay: 1.7s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.home .icons #linkedin-logo {
+  -webkit-transform: translateX(-350px);
+          transform: translateX(-350px);
+  -webkit-animation-name: slideInIcons;
+          animation-name: slideInIcons;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-delay: 2.1s;
+          animation-delay: 2.1s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.home .icons #twitter-logo {
+  -webkit-transform: translateX(-350px);
+          transform: translateX(-350px);
+  -webkit-animation-name: slideInIcons;
+          animation-name: slideInIcons;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-delay: 2.6s;
+          animation-delay: 2.6s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
 }

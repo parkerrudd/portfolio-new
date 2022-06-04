@@ -1,5 +1,6 @@
 import styles from './styles/style.css'; 
 import logo from './images/dev-logo-lighter-bg.png'; 
+import { FaLinkedin, FaGithub, FaTwitter } from "react-icons/fa"; 
 
 function App() {
 
@@ -21,7 +22,15 @@ function App() {
             <h1 className="blue-font">Hey, I'm Parker.</h1>
             <h1 className="darker-font">I'm a web developer.</h1>
             <p id="info-paragraph">I'm a software engineer passionate about combining the art of design and the skill of programming to make creative user experiences that are enjoyable and easy to use.</p>
-         </div>
+
+            <div className="icons">
+              <a id='github-logo' href="https://github.com/parkerrudd" target="_blank"> <FaGithub /> </a>
+              <a id='linkedin-logo' href="https://linkedin.com/parkerrudd" target="_blank"> <FaLinkedin /> </a>
+              <a id='twitter-logo' href="https://twitter/parkerrudd" target="_blank"> <FaTwitter /> </a>
+            </div>
+
+          </div>
+
        </section>
     </div>
   );

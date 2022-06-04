@@ -17,3 +17,12 @@
         opacity: 1;
     }
 }
+
+@keyframes slideInIcons {
+    from {
+        transform: translateX(-350px);
+    }
+    to {
+        transform: translateX(0px);
+    }
+}
