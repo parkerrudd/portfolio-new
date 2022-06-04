@@ -6,13 +6,14 @@
         @include flexCenter(column); 
         align-items: flex-start;
         gap: 2em;
-        height: 90vh;
+        height: 95vh;
         padding-left: 10vw;
         padding-right: 10vw;
     }
 
     .blue-font {
         color: $paleBlue;
+        background: none;
         font-size: 1.5em;
         opacity: 0;
         animation-name: infoDropIn;
@@ -23,6 +24,7 @@
 
     .darker-font {
         color: $prussianBlue;
+        background: none;
         font-size: 1.5em;
         opacity: 0;
         animation-name: infoDropIn;
@@ -33,6 +35,7 @@
 
     #info-paragraph {
         color: $polishedPine;
+        background: none;
         line-height: 4vh;
         font-family: 'M PLUS Code Latin', sans-serif;
         font-size: 1.3em;
@@ -76,10 +79,10 @@
         }
 
         #twitter-logo {
-            transform: translateX(-350px);
+            transform: translateX(-400px);
             animation-name: slideInIcons; 
             animation-duration: 1s;
-            animation-delay: 2.6s;
+            animation-delay: 2.5s;
             animation-fill-mode: forwards;
         }
     }

@@ -11,7 +11,12 @@
 
     .logo {
         @include flexCenter(row); 
-        margin: 2vh;
+        margin: 2vh; 
+        opacity: .8;
+
+        &:hover {
+            opacity: 1;
+        }
 
         img {
             max-width: 8vw;
@@ -32,9 +37,11 @@
         font-family: 'M PLUS Code Latin', sans-serif;
         background-color: #04214d;
         transition: .2s;
+        opacity: .8;
         &:hover {
             // text-decoration: underline;
-            color: $paleBlue; 
+            // color: $paleBlue; 
+            opacity: 1;
         }
     }
 }

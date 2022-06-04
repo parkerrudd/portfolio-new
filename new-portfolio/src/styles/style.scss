@@ -9,7 +9,14 @@
     padding: 0;
     background-color: $oxfordBlue;
     font-family: 'Press Start 2P', cursive;
+    scroll-behavior: smooth; 
+}
+
+.m-plus {
+    font-family: 'M PLUS Code Latin', sans-serif;
 }
 
 @import './navbar'; 
 @import './homepage'; 
+@import './aboutpage'; 
+@import './work'; 

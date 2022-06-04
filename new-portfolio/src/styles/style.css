@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=M+PLUS+Code+Latin:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=M+PLUS+Code+Latin:wght@300&display=swap");
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -7,6 +8,11 @@
   padding: 0;
   background-color: #031D44;
   font-family: 'Press Start 2P', cursive;
+  scroll-behavior: smooth;
+}
+
+.m-plus {
+  font-family: 'M PLUS Code Latin', sans-serif;
 }
 
 @-webkit-keyframes navDropIn {
@@ -109,6 +115,11 @@
       -ms-flex-direction: row;
           flex-direction: row;
   margin: 2vh;
+  opacity: .8;
+}
+
+.nav .logo:hover {
+  opacity: 1;
 }
 
 .nav .logo img {
@@ -142,10 +153,11 @@
   background-color: #04214d;
   -webkit-transition: .2s;
   transition: .2s;
+  opacity: .8;
 }
 
 .nav a:hover {
-  color: #ADD8E6;
+  opacity: 1;
 }
 
 #logo-image {
@@ -217,13 +229,14 @@
       -ms-flex-align: start;
           align-items: flex-start;
   gap: 2em;
-  height: 90vh;
+  height: 95vh;
   padding-left: 10vw;
   padding-right: 10vw;
 }
 
 .home .blue-font {
   color: #ADD8E6;
+  background: none;
   font-size: 1.5em;
   opacity: 0;
   -webkit-animation-name: infoDropIn;
@@ -238,6 +251,7 @@
 
 .home .darker-font {
   color: #04395E;
+  background: none;
   font-size: 1.5em;
   opacity: 0;
   -webkit-animation-name: infoDropIn;
@@ -252,6 +266,7 @@
 
 .home #info-paragraph {
   color: #70A288;
+  background: none;
   line-height: 4vh;
   font-family: 'M PLUS Code Latin', sans-serif;
   font-size: 1.3em;
@@ -323,15 +338,120 @@
 }
 
 .home .icons #twitter-logo {
-  -webkit-transform: translateX(-350px);
-          transform: translateX(-350px);
+  -webkit-transform: translateX(-400px);
+          transform: translateX(-400px);
   -webkit-animation-name: slideInIcons;
           animation-name: slideInIcons;
   -webkit-animation-duration: 1s;
           animation-duration: 1s;
-  -webkit-animation-delay: 2.6s;
-          animation-delay: 2.6s;
+  -webkit-animation-delay: 2.5s;
+          animation-delay: 2.5s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
+}
+
+#aboutpage {
+  height: 100vh;
+  color: #70A288;
+}
+
+#aboutpage .about-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 5vw;
+}
+
+#aboutpage .about-words {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: 50vw;
+  padding: 12vh 5vw;
+  line-height: 4vh;
+  gap: 2vh;
+}
+
+#aboutpage .about-words hr {
+  width: 50vw;
+  color: #ADD8E6;
+  border-top: 1px solid #70A288;
+  border-bottom: 1px solid #70A288;
+  border-left: 1px solid #70A288;
+  border-right: 1px solid #70A288;
+}
+
+#aboutpage .languages ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 5vw;
+  font-size: .7em;
+  list-style-type: circle;
+  padding-left: 1vw;
+}
+
+#aboutpage #resume-btn {
+  border-radius: 10px;
+  background-color: #04395E;
+  color: #70A288;
+  border: none;
+  padding: .3em .7em;
+  font-size: 1.2em;
+  -webkit-transition: .2s;
+  transition: .2s;
+  outline: 1px solid #70A288;
+}
+
+#aboutpage #resume-btn:hover {
+  cursor: pointer;
+  color: #ADD8E6;
+  outline: 1px solid #ADD8E6;
+}
+
+#aboutpage #headshot {
+  width: 35vw;
+  max-width: 50vw;
+  padding: 5vh 3vw;
+  margin-top: 12vh;
+  opacity: .7;
+  outline: 1px solid #ADD8E6;
+}
+
+#workpage {
+  height: 100vh;
 }
 /*# sourceMappingURL=style.css.map */

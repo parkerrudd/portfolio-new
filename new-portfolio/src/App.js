@@ -1,19 +1,21 @@
 import styles from './styles/style.css'; 
 import logo from './images/dev-logo-lighter-bg.png'; 
 import { FaLinkedin, FaGithub, FaTwitter } from "react-icons/fa"; 
+import WorkPage from './workpage';
+import AboutPage from './aboutpage';
 
 function App() {
 
   return (
     <div className="App">
-       <section className="home">
+       <section className="home" id='home'>
          <div className="nav">
             <a className="logo" href="#home">
               <img id="logo-image" src={logo} alt="" />
             </a>
             <div className="links">
-              <a id="about" href="#about">About</a>
-              <a id="work" href="#work">Work</a>
+              <a id="about" href="#aboutpage">About</a>
+              <a id="work" href="#workpage">Work</a>
               <a id="contact" href="#contact">Contact</a>
             </div>
          </div>
@@ -25,13 +27,18 @@ function App() {
 
             <div className="icons">
               <a id='github-logo' href="https://github.com/parkerrudd" target="_blank"> <FaGithub /> </a>
-              <a id='linkedin-logo' href="https://linkedin.com/parkerrudd" target="_blank"> <FaLinkedin /> </a>
-              <a id='twitter-logo' href="https://twitter/parkerrudd" target="_blank"> <FaTwitter /> </a>
+              <a id='linkedin-logo' href="https://www.linkedin.com/in/parkerrudd" target="_blank"> <FaLinkedin /> </a>
+              <a id='twitter-logo' href="https://twitter.com/parkerrudd" target="_blank"> <FaTwitter /> </a>
             </div>
 
           </div>
 
        </section>
+
+      <AboutPage /> 
+      
+      <WorkPage />
+
     </div>
   );
 }
