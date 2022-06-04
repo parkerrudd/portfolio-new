@@ -42,11 +42,10 @@ function WorkPage() {
                         </ul>
                     </div>
 
-                    <div className='pr-music-image'>
-                        <a href="https://www.parkerruddmusic.com/" target="_blank">
-                            <img src={parkerruddmusic} alt="" />
-                        </a>
-                    </div>
+                    <a href="https://www.parkerruddmusic.com/" target="_blank">
+                        <img src={parkerruddmusic} alt="" />
+                    </a>
+
                 </div>
 
                 <div className="blackjack-container">

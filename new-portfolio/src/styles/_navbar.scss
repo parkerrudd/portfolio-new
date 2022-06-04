@@ -3,11 +3,12 @@
 .nav {
     @include flexCenter(row); 
     justify-content: space-around;
-    width: 100vw;
+    width: 100%;
     gap: 30%;
     position: fixed;
     top: 0;
     background: #04214d;
+    padding-right: 2vw;
 
     .logo {
         @include flexCenter(row); 

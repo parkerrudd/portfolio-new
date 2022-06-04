@@ -15,10 +15,14 @@ function AboutPage() {
                     <h4 className='m-plus'>Here are some languages I speak:</h4>
                     <div className="languages">
                         <ul>
-                            <li>HTML</li>
-                            <li>CSS/SASS</li>
-                            <li>JavaScript</li>
-                            <li>React</li>
+                            <div className="top-ul">
+                                <li>HTML</li>
+                                <li>CSS/SASS</li>
+                            </div>
+                            <div className="bottom-ul">
+                                <li>JavaScript</li>
+                                <li>React</li>
+                            </div>
                         </ul>
                     </div>
                     <a href="https://docs.google.com/document/d/1bYgoX9_E0shY8UNCMidPCNN24379dtFYJ6oHC696_6Y/edit?usp=sharing" target="_blank"><button className='m-plus' id='resume-btn'>Resume</button></a>

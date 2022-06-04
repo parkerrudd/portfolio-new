@@ -59,6 +59,16 @@
         padding: 5vw;
         color: $paleBlue;
 
+        h5 {
+            padding-bottom: 2vh;
+            color: $polishedPine;
+            transition: .2s;
+
+            &:hover {
+                color: $paleBlue;
+            }
+        }
+
         img {
             width: 50vw;
             opacity: .7;
@@ -70,17 +80,12 @@
             }
         }
 
-        .pr-music-info {
-            @include flexCenter(column); 
-            align-items: flex-start;
-            gap: 3vh;
-
-            ul {
-                @include flexCenter(row);
-                gap: 5vw;
-                list-style: circle;
-                color: $polishedPine;
-            }
+        ul {
+            @include flexCenter(row);
+            gap: 5vw;
+            padding-top: 2vh;
+            color: $polishedPine;
+            list-style-type: circle;
         }
 
         a {
@@ -198,18 +203,12 @@
                 width: 60vw;
             }
 
-            .pr-music-info {
-                h5 {
-                    text-align: center;
-                }
-    
-                p {
-                    padding: 0 10vw;
-                }
+            h5 {
+                text-align: center;
             }
 
-            ul {
-                @include flexCenter(row);
+            p {
+                padding: 0 10vw;
             }
 
         }
@@ -245,6 +244,36 @@
                 padding: 0 10vw;
             }
         }
+    }
+
+    @media screen and (max-width: 650px) {
+       .find-me-a-song {
+        ul {
+            gap: 7vw;
+            padding-left: 7vw;
+            font-size: .8em;
+        }
+       } 
+
+       .blackjack-container {
+           ul {
+               gap: 7vw;
+               padding-left: 7vw;
+               font-size: .8em;
+           }
+       }
+
+       .pr-music-container {
+           ul {
+               font-size: .8em;
+           }
+       }
+
+       .reverb-calc-container {
+           ul {
+               font-size: .8em;
+           }
+       }
     }
 
     

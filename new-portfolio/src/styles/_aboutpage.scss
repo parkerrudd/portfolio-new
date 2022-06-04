@@ -76,7 +76,7 @@
             @include flexCenter(column);
             gap: 0;
         }
-                    
+
         .about-words {
             width: 70vw;
             padding: 5vh 5vw;
@@ -84,6 +84,10 @@
 
         #headshot {
             width: 45vw;
+        }
+
+        .languages {
+            @include flexCenter(column);
         }
     }
 }

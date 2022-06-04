@@ -130,11 +130,12 @@
           flex-direction: row;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  width: 100vw;
+  width: 100%;
   gap: 30%;
   position: fixed;
   top: 0;
   background: #04214d;
+  padding-right: 2vw;
 }
 
 .nav .logo {
@@ -358,8 +359,8 @@
 }
 
 .home .icons #github-logo {
-  -webkit-transform: translateX(-250px);
-          transform: translateX(-250px);
+  -webkit-transform: translateX(-350px);
+          transform: translateX(-350px);
   -webkit-animation-name: slideInIcons;
           animation-name: slideInIcons;
   -webkit-animation-duration: 1s;
@@ -371,8 +372,8 @@
 }
 
 .home .icons #linkedin-logo {
-  -webkit-transform: translateX(-350px);
-          transform: translateX(-350px);
+  -webkit-transform: translateX(-450px);
+          transform: translateX(-450px);
   -webkit-animation-name: slideInIcons;
           animation-name: slideInIcons;
   -webkit-animation-duration: 1s;
@@ -384,8 +385,8 @@
 }
 
 .home .icons #twitter-logo {
-  -webkit-transform: translateX(-400px);
-          transform: translateX(-400px);
+  -webkit-transform: translateX(-600px);
+          transform: translateX(-600px);
   -webkit-animation-name: slideInIcons;
           animation-name: slideInIcons;
   -webkit-animation-duration: 1s;
@@ -584,6 +585,21 @@
   #aboutpage #headshot {
     width: 45vw;
   }
+  #aboutpage .languages {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 #workpage {
@@ -698,6 +714,17 @@
   color: #ADD8E6;
 }
 
+#workpage .pr-music-container h5 {
+  padding-bottom: 2vh;
+  color: #70A288;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+#workpage .pr-music-container h5:hover {
+  color: #ADD8E6;
+}
+
 #workpage .pr-music-container img {
   width: 50vw;
   opacity: .7;
@@ -710,27 +737,7 @@
   opacity: .8;
 }
 
-#workpage .pr-music-container .pr-music-info {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  gap: 3vh;
-}
-
-#workpage .pr-music-container .pr-music-info ul {
+#workpage .pr-music-container ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -745,8 +752,9 @@
       -ms-flex-direction: row;
           flex-direction: row;
   gap: 5vw;
-  list-style: circle;
+  padding-top: 2vh;
   color: #70A288;
+  list-style-type: circle;
 }
 
 #workpage .pr-music-container a {
@@ -935,26 +943,11 @@
   #workpage .pr-music-container img {
     width: 60vw;
   }
-  #workpage .pr-music-container .pr-music-info h5 {
+  #workpage .pr-music-container h5 {
     text-align: center;
   }
-  #workpage .pr-music-container .pr-music-info p {
+  #workpage .pr-music-container p {
     padding: 0 10vw;
-  }
-  #workpage .pr-music-container ul {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
   }
   #workpage .blackjack-container {
     display: -webkit-box;
@@ -1003,6 +996,25 @@
   }
   #workpage .reverb-calc-container p {
     padding: 0 10vw;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  #workpage .find-me-a-song ul {
+    gap: 7vw;
+    padding-left: 7vw;
+    font-size: .8em;
+  }
+  #workpage .blackjack-container ul {
+    gap: 7vw;
+    padding-left: 7vw;
+    font-size: .8em;
+  }
+  #workpage .pr-music-container ul {
+    font-size: .8em;
+  }
+  #workpage .reverb-calc-container ul {
+    font-size: .8em;
   }
 }
 
@@ -1075,5 +1087,19 @@
 
 #contactpage #submit-btn:hover {
   background-color: #04395E;
+}
+
+@media screen and (max-width: 850px) {
+  #contactpage #email {
+    width: 50vw;
+    max-width: 50vw;
+  }
+  #contactpage #email-text {
+    width: 50vw;
+    max-width: 50vw;
+  }
+  #contactpage p {
+    width: 50vw;
+  }
 }
 /*# sourceMappingURL=style.css.map */
