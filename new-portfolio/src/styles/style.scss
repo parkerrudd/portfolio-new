@@ -1,0 +1,15 @@
+@import './variables'; 
+@import './mixins'; 
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Code+Latin:wght@300&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: $oxfordBlue;
+    font-family: 'Press Start 2P', cursive;
+}
+
+@import './navbar'; 
+@import './homepage'; 

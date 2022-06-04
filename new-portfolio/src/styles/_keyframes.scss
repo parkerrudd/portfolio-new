@@ -1,0 +1,19 @@
+@keyframes navDropIn {
+    from {
+        transform: translateY(-100px);
+    }
+    to {
+        transform: translateY(0px);
+    }
+}
+
+@keyframes infoDropIn {
+    0% {
+        // transform: translateY(-400px);
+        opacity: 0;
+    }
+    100% {
+        // transform: translateY(0px);
+        opacity: 1;
+    }
+}

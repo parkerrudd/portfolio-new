@@ -1,0 +1,46 @@
+@import './keyframes'; 
+
+.home {
+
+    .info-section  {
+        @include flexCenter(column); 
+        align-items: flex-start;
+        gap: 2em;
+        height: 90vh;
+        padding-left: 10vw;
+        padding-right: 10vw;
+    }
+
+    .blue-font {
+        color: $paleBlue;
+        font-size: 1.5em;
+        opacity: 0;
+        animation-name: infoDropIn;
+        animation-duration: 2s;
+        animation-delay: 1s;
+        animation-fill-mode: forwards;
+    }
+
+    .darker-font {
+        color: $prussianBlue;
+        font-size: 1.5em;
+        opacity: 0;
+        animation-name: infoDropIn;
+        animation-duration: 2s;
+        animation-delay: 1.3s;
+        animation-fill-mode: forwards;
+    }
+
+    #info-paragraph {
+        color: $polishedPine;
+        line-height: 4vh;
+        font-family: 'M PLUS Code Latin', sans-serif;
+        font-size: 1.3em;
+        padding-right: 20vw;
+        opacity: 0;
+        animation-name: infoDropIn;
+        animation-duration: 2s;
+        animation-delay: 1.5s;
+        animation-fill-mode: forwards;
+    }
+}
