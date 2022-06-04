@@ -1,12 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=M+PLUS+Code+Latin:wght@300&display=swap');
 @import './keyframes'; 
+@import './mediaqueries';
 
 .about-container {
     animation: fadeIn 1s;
 }
 
 #aboutpage {
-    height: 100vh;
+    // height: 100vh;
     color: $polishedPine;
 
     .about-container {
@@ -19,7 +20,7 @@
         align-items: flex-start;
         width: 50vw;
         padding: 12vh 5vw;
-        line-height: 4vh;
+        line-height: 25px;
         gap: 2.5vh;
 
         hr {
@@ -65,9 +66,25 @@
         width: 35vw;
         max-width: 50vw;
         padding: 5vh 3vw;
-        // margin: 0 1vw;
-        margin-top: 12vh;
         opacity: .7;
         outline: 1px solid $paleBlue;
+        background: none;
+    }
+
+    @media screen and (max-width: 850px) {
+        .about-container {
+            @include flexCenter(column);
+            gap: 0;
+        }
+                    
+        .about-words {
+            width: 70vw;
+            padding: 5vh 5vw;
+        }
+
+        #headshot {
+            width: 45vw;
+        }
     }
 }
+

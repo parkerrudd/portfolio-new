@@ -31,7 +31,7 @@ function WorkPage() {
                 <div className='pr-music-container'>
                     <div className="pr-music-info">
                         <a href="https://www.parkerruddmusic.com/" target="_blank">
-                            <h5>parkerruddmusic.com</h5>
+                            <h5>parkerRuddMusic.com</h5>
                         </a>
                         <p className='m-plus'>
                         This is a personal website that I made for my music. It is designed to be a one-stop for users to then be redirected to listen to my music on the streaming platform of their choice. 
@@ -71,7 +71,7 @@ function WorkPage() {
                 <div className="reverb-calc-container">
                     <div className="reverb-calc-info">
                         <a href="https://www.reverbcalculator.com/" target="_blank">
-                            <h5>reverbcalculator.com</h5>
+                            <h5>reverbCalculator.com</h5>
                         </a>
                         <p className='m-plus'>
                         This is a web app that helps music producers decide the reverb parameters for their track. The user simply inputs the track's BPM, and the app displays the ideal time for all the dimensions of the reverb to run. The user can then copy these values into their track's reverb settings. 

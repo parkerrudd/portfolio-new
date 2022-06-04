@@ -174,5 +174,78 @@
         }
     }
 
+    @media screen and (max-width: 850px) {
+        .find-me-a-song {
+            @include flexCenter(column);
+
+            img {
+                width: 60vw;
+            }
+
+            h5 {
+                text-align: center;
+            }
+
+            p {
+                padding: 0 10vw;
+            }
+        }
+
+        .pr-music-container {
+            @include flexCenter(column-reverse);
+
+            img {
+                width: 60vw;
+            }
+
+            .pr-music-info {
+                h5 {
+                    text-align: center;
+                }
+    
+                p {
+                    padding: 0 10vw;
+                }
+            }
+
+            ul {
+                @include flexCenter(row);
+            }
+
+        }
+
+        .blackjack-container {
+            @include flexCenter(column);
+
+            img {
+                width: 60vw;
+            }
+
+            h5 {
+                text-align: center;
+            }
+
+            p {
+                padding: 0 10vw;
+            }
+        }
+
+        .reverb-calc-container {
+            @include flexCenter(column-reverse);
+
+            img {
+                width: 60vw;
+            }
+
+            h5 {
+                text-align: center;
+            }
+
+            p {
+                padding: 0 10vw;
+            }
+        }
+    }
+
     
 }
