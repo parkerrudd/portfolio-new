@@ -1,0 +1,178 @@
+#workpage {
+    // height: 100vh;
+    @include flexCenter(column);
+
+    h1 {
+        color: $polishedPine;
+        text-align: center;
+        padding-bottom: 1vh;
+        margin-top: 10vh;
+    }
+
+    hr {
+        color: $polishedPine;
+        border-bottom: 1px solid $polishedPine;
+        border-top: 1px solid $polishedPine;
+        border-left: 1px solid $polishedPine;
+        border-right: 1px solid $polishedPine;
+    }
+
+    .find-me-a-song {
+        @include flexCenter(row);
+        color: $paleBlue;
+        gap: 5vw;
+        padding: 5vw;
+
+        img {
+            width: 50vw;
+            opacity: .7;
+            outline: 1px solid $paleBlue;
+            transition: .5s;
+
+            &:hover {
+                opacity: .8;
+            }
+        }
+
+        a {
+            text-decoration: none;
+            color: $polishedPine;
+            transition: .3s;
+
+            &:hover {
+                color: $paleBlue;
+            }
+        }
+
+        ul {
+            @include flexCenter(row);
+            gap: 3vw;
+            padding-top: 3vh;
+            color: $polishedPine;
+            list-style-type: circle;
+        }
+    }
+
+    .pr-music-container {
+        @include flexCenter(row);
+        gap: 5vw;
+        padding: 5vw;
+        color: $paleBlue;
+
+        img {
+            width: 50vw;
+            opacity: .7;
+            outline: 1px solid $paleBlue;
+            transition: .5s;
+
+            &:hover {
+                opacity: .8;
+            }
+        }
+
+        .pr-music-info {
+            @include flexCenter(column); 
+            align-items: flex-start;
+            gap: 3vh;
+
+            ul {
+                @include flexCenter(row);
+                gap: 5vw;
+                list-style: circle;
+                color: $polishedPine;
+            }
+        }
+
+        a {
+            text-decoration: none;
+            color: $polishedPine;
+            transition: .3s;
+
+            &:hover {
+                color: $paleBlue;
+            }
+        }
+    }
+
+    .blackjack-container {
+        @include flexCenter(row);
+        gap: 5vw;
+        padding: 5vw;
+        color: $paleBlue;
+
+        img {
+            width: 50vw;
+            opacity: .7;
+            outline: 1px solid $paleBlue;
+            transition: .5s;
+
+            &:hover {
+                opacity: .8;
+            }
+        }
+
+        h5 {
+            padding-bottom: 2vh;
+        }
+
+        a {
+            text-decoration: none;
+            color: $polishedPine;
+            transition: .3s;
+
+            &:hover {
+                color: $paleBlue;
+            }
+        }
+
+        ul {
+            @include flexCenter(row);
+            gap: 5vw;
+            padding-top: 2vh;
+            color: $polishedPine;
+            list-style-type: circle;
+        }
+    }
+
+    .reverb-calc-container {
+        @include flexCenter(row);
+        gap: 5vw;
+        padding: 5vw;
+        color: $paleBlue;
+
+        img {
+            width: 50vw;
+            opacity: .7;
+            outline: 1px solid $paleBlue;
+            transition: .5s;
+
+            &:hover {
+                opacity: .8;
+            }
+        }
+
+        h5 {
+            padding-bottom: 2vh;
+        }
+
+        a {
+            text-decoration: none;
+            color: $polishedPine;
+            transition: .3s;
+
+            &:hover {
+                color: $paleBlue;
+            }
+        }
+
+        ul {
+            @include flexCenter(row);
+            gap: 5vw;
+            padding-top: 2vh;
+            color: $polishedPine;
+            list-style-type: circle;
+        }
+    }
+
+    
+}

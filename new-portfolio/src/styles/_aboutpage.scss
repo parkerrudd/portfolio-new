@@ -1,4 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=M+PLUS+Code+Latin:wght@300&display=swap');
+@import './keyframes'; 
+
+.about-container {
+    animation: fadeIn 1s;
+}
 
 #aboutpage {
     height: 100vh;
@@ -6,7 +11,7 @@
 
     .about-container {
         @include flexCenter(row);
-        gap: 5vw;
+        gap: 7vw;
     }
 
     .about-words {
@@ -15,7 +20,7 @@
         width: 50vw;
         padding: 12vh 5vw;
         line-height: 4vh;
-        gap: 2vh;
+        gap: 2.5vh;
 
         hr {
             width: 50vw;

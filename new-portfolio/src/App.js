@@ -3,6 +3,7 @@ import logo from './images/dev-logo-lighter-bg.png';
 import { FaLinkedin, FaGithub, FaTwitter } from "react-icons/fa"; 
 import WorkPage from './workpage';
 import AboutPage from './aboutpage';
+import Contact from './contact';
 
 function App() {
 
@@ -16,7 +17,7 @@ function App() {
             <div className="links">
               <a id="about" href="#aboutpage">About</a>
               <a id="work" href="#workpage">Work</a>
-              <a id="contact" href="#contact">Contact</a>
+              <a id="contact" href="#contactpage">Contact</a>
             </div>
          </div>
 
@@ -38,6 +39,8 @@ function App() {
       <AboutPage /> 
       
       <WorkPage />
+
+      <Contact />
 
     </div>
   );
