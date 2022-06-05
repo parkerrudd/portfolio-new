@@ -1,5 +1,4 @@
 #workpage {
-    // height: 100vh;
     @include flexCenter(column);
 
     h1 {
@@ -82,6 +81,8 @@
 
         ul {
             @include flexCenter(row);
+            justify-content: flex-start;
+            padding-left: 1vw;
             gap: 5vw;
             padding-top: 2vh;
             color: $polishedPine;
@@ -211,6 +212,10 @@
                 padding: 0 10vw;
             }
 
+            ul {
+                justify-content: center;
+            }
+
         }
 
         .blackjack-container {
@@ -247,6 +252,10 @@
     }
 
     @media screen and (max-width: 650px) {
+        h1 {
+            font-size: 1em;
+        }
+
        .find-me-a-song {
         ul {
             gap: 7vw;

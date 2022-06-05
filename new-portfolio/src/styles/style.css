@@ -751,6 +751,10 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding-left: 1vw;
   gap: 5vw;
   padding-top: 2vh;
   color: #70A288;
@@ -949,6 +953,11 @@
   #workpage .pr-music-container p {
     padding: 0 10vw;
   }
+  #workpage .pr-music-container ul {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
   #workpage .blackjack-container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1000,6 +1009,9 @@
 }
 
 @media screen and (max-width: 650px) {
+  #workpage h1 {
+    font-size: 1em;
+  }
   #workpage .find-me-a-song ul {
     gap: 7vw;
     padding-left: 7vw;
